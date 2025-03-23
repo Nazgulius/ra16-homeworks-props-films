@@ -1,4 +1,8 @@
-export default function Star() {
+interface StarProps {  
+  count: number;  
+} 
+
+export default function Star({ count }: StarProps) {
 
   const star: any = (
     <li>
@@ -8,13 +12,16 @@ export default function Star() {
       </svg>
     </li>
   );
+  
+  const arrayStars = Array.from({ length: count }, (_, index) => (  
+    <li key={index}>{star}</li>  
+  ));
+
 
   return (
     <>
       <ul className="card-body-stars u-clearfix">
-        {star}
-        {star}
-        {star}
+        {arrayStars}        
       </ul>
     </>
   );

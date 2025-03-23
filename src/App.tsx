@@ -1,16 +1,17 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import './App.css'
 import Stars from './components/Stars'
 
 function App() {
-
+  let count: number = 1;
+  
   return (
     <>
       <div className="block">
         <img className="block-poster" src="#" alt="poster" />
         <div className='blosk-container-main'>
           <h2 className='blosk-title'>Супермен</h2>
-          <Stars count={1} />
+          <Stars count={count} />
           <button className='blosk-btn-bye'>Купить 1299Р</button>
           <button className='blosk-btn-more'>Подробнее -</button>
         </div>
