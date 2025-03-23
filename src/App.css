@@ -10,7 +10,80 @@ body {
 }
 
 .block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
   width: 500px;
-  height: 500px;
+  height: 200px;
   background-color: #fff;
+}
+
+.block-poster {
+  width: 100px;
+}
+
+.blosk-title {
+  text-align: left;
+}
+
+.card-body-stars {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.blosk-container-svg {
+  padding: 5px;
+}
+
+.blosk-btn-bye {
+  background-color: rgb(154, 228, 228);
+  color: black;
+  border-radius: 2px;
+}
+
+.blosk-btn-bye:hover {
+  background-color: rgb(66, 248, 248);
+  color: black;
+}
+
+.blosk-btn-bye:focus {
+  background-color: rgb(66, 248, 248);
+  color: black;
+}
+
+.blosk-btn-bye:active {
+  background-color: rgb(0, 255, 76);
+  color: black;
+}
+
+.blosk-btn-more {
+  background-color: white;
+  color: black;
+  border-radius: 2px;
+}
+
+.blosk-btn-more:hover {
+  background-color: rgb(247, 178, 178);
+  color: black;
+}
+
+.blosk-btn-more:focus {
+  background-color: rgb(247, 178, 178);
+  color: black;
+}
+
+.blosk-btn-more:active {
+  background-color: rgb(255, 8, 8);
+  color: black;
+}
+
+.svg {
+  color: green;
+}
+
+.svg:nth-child(n + 2) {
+  margin-left: 3px;  
 }
